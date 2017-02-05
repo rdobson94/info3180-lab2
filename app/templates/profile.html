@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% include "header.html" %}
+
+
+{% block main %}
+
+
+<style type="text/css">
+.up{
+    position:relative;
+    left:250px;
+    top:-375px;
+    width: 320px;
+    padding: 5px;
+    border:3px solid LemonChiffon  ;
+    border-top-width: 20px;
+    margin: 20;
+    border-style: thin solid gray;
+    
+
+}
+    
+</style>
+<div>
+<h1 class="page-header">Profile</h1>
+<img src="{{ url_for('static',filename='profilepic.jpg') }}" height="350" width="250">
+<table class="up">
+    <tr>
+        <td><h3>Ramone Dobson</h3><hr></td>
+    </tr>
+        <td>
+            <p> {{ now }} </p><hr>
+            <p><b>Username:</b> Ramone.A.D </p>
+            <br>
+            <p><b>ID#:</b> 620067669</p>
+            <br>
+            <p><b>Age:22</b></p>
+            <br>
+            <p><b>Gender:</b> Male</p><hr>
+            <p>"I am a Jedi Master"</p>
+        </td>
+</table>
+</div>
+{% endblock %}
